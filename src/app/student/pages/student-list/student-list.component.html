@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="button_add">
+        <button class="btn btn-primary" (click)="LinkToItem()">Добавить студента</button>
+    </div>
+</div>
+<div class="filtr">
+  Фильтры:
+  <div class="form-group">
+    <label for="surname">Фамилия</label>
+    <input type="text" 
+    class="form-control" 
+    [(ngModel)]="surname"
+    />
+</div>
+  <div class="form-group">
+    <label for="group">Группа</label>
+    <input type="text" 
+    class="form-control" 
+    [(ngModel)]="group"
+    />
+</div>
+  <div class="form-group">
+    <label for="direction">Направление</label>
+    <input type="text" 
+    class="form-control" 
+    [(ngModel)]="direction"
+    />
+</div>
+<div>
+  <button class="button mt-2" (click)="filter()"> Отфильтровать</button>
+</div>
+<div>
+  <button class="button mt-2" (click)="getData()"> Сбросить фильтр</button>
+</div>
+</div>
+<table class="table">
+    <thead>
+      <tr>
+        <th>Фамилия</th>
+        <th>Имя</th>
+        <th>Отчество</th>
+        <th>Дата рождения</th>
+        <th>Группа</th>
+        <th>Телефон</th>
+        <th>Email</th>
+        <th>Направление</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students" (click)="LinkToItem(student.id)">
+        <td>{{student.surname}}</td>
+        <td>{{student.name[0].toLocaleUpperCase()}}.</td>
+        <td>{{student.patronymic[0].toLocaleUpperCase()}}.</td>
+        <td>{{student.birthday}}</td>
+        <td>{{student.group}}</td>
+        <td>{{student.phone}}</td>
+        <td>{{student.email}}</td>
+        <td>{{student.direction}}</td>
+      </tr>
+      
+    </tbody>
+  </table>

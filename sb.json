@@ -1,0 +1,48 @@
+{
+  "student": [
+    {
+      "name": "Никита",
+      "surname": "Гневышев",
+      "patronymic": "Константинович",
+      "birthday": "20.11.01",
+      "group": "191-323",
+      "phone": "Мой собственный",
+      "email": "Что-то-там@gmail.com",
+      "direction": "САПР",
+      "id": 2
+    },
+    {
+      "name": "аа",
+      "surname": "Гнав",
+      "patronymic": "аа",
+      "birthday": "01.11.11",
+      "group": "191-324",
+      "phone": "ккк",
+      "email": "ккк",
+      "direction": "САПР",
+      "id": 6
+    },
+    {
+      "name": "Ангелина",
+      "surname": "Комарова",
+      "patronymic": "Анатольевна",
+      "birthday": "04.07.02",
+      "group": "ПСО - 323",
+      "phone": "88005553535",
+      "email": "да",
+      "direction": "Юрист",
+      "id": 7
+    },
+    {
+      "name": "Абрикос",
+      "surname": "Абрикосов",
+      "patronymic": "Персикович",
+      "birthday": "6.6.66",
+      "group": "Крови",
+      "phone": "Мой порядковый номер",
+      "email": "аааа",
+      "direction": "Африка",
+      "id": 8
+    }
+  ]
+}

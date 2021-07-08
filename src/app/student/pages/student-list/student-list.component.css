@@ -1,0 +1,35 @@
+tr{
+    cursor: pointer;
+}
+.button_add{
+    margin-bottom: 10px;
+}
+.button{
+   background-color:salmon;
+   border: 1px solid red;
+   border-radius: 3px;
+   color: black;
+   font-weight: 400;
+   padding: .375rem .75rem;
+}
+.btn{
+   background-color:salmon;
+   border: 1px solid red;
+   color: black;
+}
+
+.form-control{
+    height:25px;
+    width: 100px
+}
+.filtr{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+@media (max-width: 640px){
+    .filtr{ 
+        display: block;
+    }
+   
+}

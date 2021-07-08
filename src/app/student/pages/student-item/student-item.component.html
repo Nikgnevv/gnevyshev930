@@ -1,0 +1,97 @@
+<Form [formGroup] = "studentForm" (ngSubmit)="save()">
+    <div class="row">
+        <div class="col-12 mt-3">
+            <div class="form-group">
+                <label for="surname">Фамилия</label>
+                <input type="text" 
+                class="form-control" 
+                id="surname" 
+                formControlName ='surname' 
+                [ngClass]="{'has-error': this.studentForm.get('surname')?.invalid && this.studentForm.get('surname')?.touched}"
+                />
+            </div>
+            <div class="col-12 mt-3">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" class="form-control" id="name" formControlName="name"
+                    [ngClass]="{'has-error': this.studentForm.get('name')?.invalid && this.studentForm.get('name')?.touched}" />
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mt-3">
+            <div class="form-group">
+                <label for="patronymic">Отчество</label>
+                <input type="text" 
+                class="form-control" 
+                id="patronymic" 
+                formControlName ='patronymic' 
+                />
+            </div>
+        </div>
+        <div class="col-12 mt-3">
+            <div class="form-group">
+                <label for="birthday">Дата рождения</label>
+                <input type="text" 
+                class="form-control" 
+                id="birthday"
+                placeholder="ДД.ММ.ГГ" 
+                formControlName ='birthday' 
+                />
+            </div>
+        </div>
+        <div class="col-12 mt-3">
+            <div class="form-group">
+                <label for="group">Группа</label>
+                <input type="text" 
+                class="form-control" 
+                id="group" 
+                formControlName ='group' 
+                [ngClass]="{'has-error': this.studentForm.get('group')?.invalid && this.studentForm.get('group')?.touched}"
+                />
+            </div>
+        </div>
+        <div class="col-12 mt-3">
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="text" 
+                class="form-control" 
+                id="phone" 
+                formControlName ='phone' 
+                [ngClass]="{'has-error': this.studentForm.get('phone')?.invalid && this.studentForm.get('phone')?.touched}"
+                />
+            </div>
+        </div>
+        <div class="col-12 mt-3">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" 
+                class="form-control" 
+                id="email" 
+                formControlName ='email' 
+                [ngClass]="{'has-error': this.studentForm.get('email')?.invalid && this.studentForm.get('email')?.touched}"
+                />
+            </div>
+        </div>
+        <div class="col-12 mt-3">
+            <div class="form-group">
+                <label for="direction">Направление</label>
+                <input type="text" 
+                class="form-control" 
+                id="direction" 
+                formControlName ='direction' 
+                [ngClass]="{'has-error': this.studentForm.get('direction')?.invalid && this.studentForm.get('direction')?.touched}"
+                />
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <button type = "submit" class="btn btn-primary float-start" [disabled]="studentForm.invalid">Сохранить</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <button type = "button" class="btn btn-primary float-start" *ngIf="id" (click)="delete()">Удалить</button>
+            </div>
+        </div>
+    </div>
+</Form>

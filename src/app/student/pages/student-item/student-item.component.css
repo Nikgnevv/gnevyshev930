@@ -1,0 +1,10 @@
+.btn{
+    background-color:salmon;
+    border: 1px solid red;
+    color: black;
+ }
+ .form-control{
+     width: 200px;
+     height: 30px;
+    
+ }
